@@ -179,7 +179,7 @@ public class RecyclerViewHFAdapter extends RecyclerView.Adapter<RecyclerView.Vie
 
         public ItemHolder(View itemView) {
             super(itemView);
-            mTextView = (TextView) itemView.findViewById(R.id.item_tv);
+            mTextView = (TextView) itemView;
         }
     }
 

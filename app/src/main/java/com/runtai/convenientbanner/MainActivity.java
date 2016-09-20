@@ -1,5 +1,6 @@
 package com.runtai.convenientbanner;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -32,6 +33,7 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
+import com.runtai.convenientbanner.recyclerviewdemo.ADRecyclerViewDemo;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -252,5 +254,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onItemClick(int position) {
         Toast.makeText(this, "点击了第" + position + "个", Toast.LENGTH_SHORT).show();
+        Intent it = new Intent(this, ADRecyclerViewDemo.class);
+        startActivity(it);
     }
 }
